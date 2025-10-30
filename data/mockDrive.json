@@ -1,0 +1,65 @@
+{
+  "root": {
+    "id": "root",
+    "name": "Client Deals",
+    "children": [
+      {
+        "id": "deal_acme",
+        "name": "ACME Renewal Q4",
+        "type": "folder",
+        "children": [
+          {"id": "acme_brief", "type": "file", "name": "Account Brief.pdf", "mime": "application/pdf", "size": 248123, "modified": "2025-09-30"},
+          {"id": "acme_notes", "type": "file", "name": "Discovery Notes.txt", "mime": "text/plain", "size": 5812, "modified": "2025-10-12"},
+          {"id": "acme_pricing", "type": "file", "name": "Pricing-Proposal-v3.docx", "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "size": 90112, "modified": "2025-10-14"},
+          {"id": "acme_timeline", "type": "file", "name": "Renewal Timeline.png", "mime": "image/png", "size": 183344, "modified": "2025-09-25"}
+        ]
+      },
+      {
+        "id": "deal_globex",
+        "name": "Globex Net-New",
+        "type": "folder",
+        "children": [
+          {"id": "globex_org", "type": "file", "name": "Org Map.pdf", "mime": "application/pdf", "size": 120441, "modified": "2025-10-01"},
+          {"id": "globex_meeting", "type": "file", "name": "Meeting Minutes 2025-10-10.txt", "mime": "text/plain", "size": 7310, "modified": "2025-10-10"},
+          {"id": "globex_brief", "type": "file", "name": "Deal Brief.md", "mime": "text/markdown", "size": 4812, "modified": "2025-10-05"}
+        ]
+      },
+      {
+        "id": "deal_initech",
+        "name": "Initech Expansion",
+        "type": "folder",
+        "children": [
+          {"id": "initech_risks", "type": "file", "name": "Risk Register.xlsx", "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "size": 66120, "modified": "2025-10-08"},
+          {"id": "initech_comp", "type": "file", "name": "Competitor Landscape.pdf", "mime": "application/pdf", "size": 144002, "modified": "2025-10-02"}
+        ]
+      },
+      {
+        "id": "deal_umbrella",
+        "name": "Umbrella Cross-Sell",
+        "type": "folder",
+        "children": [
+          {"id": "umbrella_email", "type": "file", "name": "CFO Email Thread.eml", "mime": "message/rfc822", "size": 21011, "modified": "2025-10-06"},
+          {"id": "umbrella_proposal", "type": "file", "name": "Proposal Draft.docx", "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "size": 165432, "modified": "2025-10-09"}
+        ]
+      },
+      {
+        "id": "deal_waystar",
+        "name": "Waystar Renewal",
+        "type": "folder",
+        "children": [
+          {"id": "waystar_pricing", "type": "file", "name": "Pricing Analysis.xlsx", "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "size": 85544, "modified": "2025-10-11"},
+          {"id": "waystar_neg", "type": "file", "name": "Negotiation Strategy.md", "mime": "text/markdown", "size": 3211, "modified": "2025-10-12"}
+        ]
+      },
+      {
+        "id": "deal_betaco",
+        "name": "BetaCo Pilot",
+        "type": "folder",
+        "children": [
+          {"id": "betaco_timeline", "type": "file", "name": "Pilot Timeline.csv", "mime": "text/csv", "size": 2321, "modified": "2025-10-07"},
+          {"id": "betaco_activities", "type": "file", "name": "Activity Log.txt", "mime": "text/plain", "size": 9912, "modified": "2025-10-09"}
+        ]
+      }
+    ]
+  }
+}

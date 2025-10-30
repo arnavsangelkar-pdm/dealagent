@@ -1,0 +1,15 @@
+Discovery Notes - ACME Renewal Q4
+
+Meeting Date: October 10, 2025
+Attendees: Dana Park (COO), Alex Chen (Sales), Sarah Kim (Account Manager)
+
+Key Points:
+- Current contract expires Dec 31, 2025
+- Budget approved for 15% increase
+- Interested in new analytics module
+- Concern about integration with existing ERP
+
+Action Items:
+1. Provide pricing for analytics add-on
+2. Schedule technical deep-dive
+3. Prepare migration timeline

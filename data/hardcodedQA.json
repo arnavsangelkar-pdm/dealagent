@@ -1,0 +1,38 @@
+[
+  {
+    "id": "q1",
+    "question": "What's the latest status of the ACME renewal?",
+    "answer": "ACME Renewal Q4 is **Green**. Pricing-Proposal-v3.docx was updated on **Oct 14, 2025**. Next milestone: **Redline review** by Oct 31, 2025. Decision sponsor: **COO (Dana Park)**. See Account Brief.pdf for scope alignment and Renewal Timeline.png for key dates.",
+    "citations": ["acme_pricing", "acme_brief", "acme_timeline"]
+  },
+  {
+    "id": "q2",
+    "question": "Summarize the decision makers at Globex.",
+    "answer": "Primary: **VP Infrastructure (Lee Howard)** – economic buyer. Technical: **Director of Platform (M. Alvarez)** – holds performance criteria. Procurement: **Sourcing Manager (Priya Shah)** – formal gate for PO. Champions: **Cloud Architect (Samir K.)** and **Ops Lead (T. Nair)**. See Org Map.pdf and Meeting Minutes 2025-10-10.txt.",
+    "citations": ["globex_org", "globex_meeting"]
+  },
+  {
+    "id": "q3",
+    "question": "What are the top risks for the Initech deal?",
+    "answer": "1) **Budget reallocation** risk due to Q4 freeze; 2) **Competitive pressure** from Altify per Competitive Landscape.pdf; 3) **Integration complexity** flagged in Risk Register.xlsx (ETL dependencies). Mitigation: lock pilot SOW, secure Exec sponsor, provide migration runbook.",
+    "citations": ["initech_comp", "initech_risks"]
+  },
+  {
+    "id": "q4",
+    "question": "Draft a next-step email to the Umbrella CFO.",
+    "answer": "Subject: Next Steps on Cross-Sell Pilot\n\nHi <CFO Name>,\n\nThank you for the discussion. Per the attached Proposal Draft, we'll: 1) finalize success metrics, 2) provision sandbox access by Nov 3, and 3) align legal on data handling. May we schedule 30 minutes this week?\n\nBest,\n<Your Name>",
+    "citations": ["umbrella_proposal", "umbrella_email"]
+  },
+  {
+    "id": "q5",
+    "question": "What files mention pricing for Waystar?",
+    "answer": "Two files reference pricing: **Pricing Analysis.xlsx** (sensitivity tabs) and **Negotiation Strategy.md** (discount guardrails).",
+    "citations": ["waystar_pricing", "waystar_neg"]
+  },
+  {
+    "id": "q6",
+    "question": "Show me a timeline of the BetaCo activities.",
+    "answer": "Pilot kick-off **Oct 7** (see Pilot Timeline.csv). Workshops on **Oct 8–9**; access provisioned **Oct 10**; data load **Oct 12**; stakeholder review **Oct 15**. Activity Log.txt confirms deliverables and owners.",
+    "citations": ["betaco_timeline", "betaco_activities"]
+  }
+]

@@ -1,0 +1,20 @@
+Meeting Minutes - Globex Net-New Deal
+Date: October 10, 2025
+
+Attendees:
+- Lee Howard (VP Infrastructure)
+- M. Alvarez (Director of Platform)
+- Priya Shah (Sourcing Manager)
+- Samir K. (Cloud Architect)
+- T. Nair (Ops Lead)
+
+Discussion:
+- Infrastructure needs: scalable platform for 500+ users
+- Performance requirements: 99.9% uptime SLA
+- Procurement timeline: Q1 2026
+- Technical evaluation period: 30 days
+
+Next Steps:
+- Send formal RFP by Oct 15
+- Schedule product demo for Oct 20
+- Technical proof-of-concept window: Nov 1-15
