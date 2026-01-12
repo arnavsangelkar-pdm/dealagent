@@ -30,13 +30,13 @@ export default function Navbar({ account, connected }: { account?: string; conne
 
   return (
     <nav className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <div className="px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <h1 className="text-xl font-semibold">{BRAND_NAME}</h1>
+          <h1 className="text-xl font-semibold text-foreground">{BRAND_NAME}</h1>
         </div>
         <div className="flex items-center gap-3">
           {connected && account && (
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-card text-sm">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-card text-sm text-foreground">
               <Cloud size={16} />
               <span>Connected to Google Drive</span>
               <span className="text-muted-foreground">•</span>

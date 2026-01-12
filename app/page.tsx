@@ -1,47 +1,60 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import DealList from '@/app/components/DealList';
+import Filters from '@/app/components/Filters';
+import Chat from '@/app/components/Chat';
 import Navbar from '@/components/Navbar';
-import DriveSidebar from '@/components/DriveSidebar';
-import ChatPanel from '@/components/ChatPanel';
+import type { FilterOptions } from '@/lib/retrieval';
 
 export default function Home() {
+  const [filters, setFilters] = useState<FilterOptions>({});
+  const [selectedDealId, setSelectedDealId] = useState<string | undefined>();
   const [connected, setConnected] = useState(false);
-  const [account, setAccount] = useState<string>('');
-  const [loading, setLoading] = useState(true);
-
+  const [account, setAccount] = useState<string | undefined>();
+  
   useEffect(() => {
+    // Check connection status
     fetch('/api/connect')
       .then(res => res.json())
       .then(data => {
-        setAccount(data.account);
-        setConnected(data.status === 'connected');
-        setLoading(false);
+        if (data.status === 'connected') {
+          setConnected(true);
+          setAccount(data.account);
+        }
       })
       .catch(() => {
-        setLoading(false);
+        setConnected(false);
       });
   }, []);
-
+  
+  const handleDealSelect = (dealId: string) => {
+    setSelectedDealId(dealId);
+    // Auto-fill chat with a question about the selected deal
+    // This will be handled by the Chat component when selectedDealId changes
+  };
+  
   return (
-    <div className="h-screen flex flex-col overflow-hidden">
+    <div className="h-screen flex flex-col overflow-hidden bg-background">
       <Navbar account={account} connected={connected} />
+      
+      {/* Main Content */}
       <div className="flex-1 flex overflow-hidden">
-        {/* Left Column: Drive Workspace */}
-        <div className="hidden lg:flex lg:flex-col lg:w-3/12 border-r border-border bg-background">
-          <DriveSidebar />
-        </div>
-
-        {/* Mobile/Tablet: Single column for Drive */}
-        <div className="lg:hidden flex flex-col w-full border-r border-border bg-background">
+        {/* Left Panel: Filters + Deal List */}
+        <div className="w-1/3 border-r border-border bg-card flex flex-col overflow-hidden">
+          <Filters filters={filters} onFiltersChange={setFilters} />
           <div className="flex-1 overflow-hidden">
-            <DriveSidebar />
+            <DealList
+              onDealSelect={handleDealSelect}
+              selectedDealId={selectedDealId}
+              filters={filters}
+            />
           </div>
         </div>
-
-        {/* Right Column: Chat */}
-        <div className="flex-1 lg:w-9/12 flex flex-col bg-background">
-          <ChatPanel />
+        
+        {/* Right Panel: Chat */}
+        <div className="flex-1 flex flex-col overflow-hidden bg-background">
+          <Chat filters={filters} selectedDealId={selectedDealId} />
         </div>
       </div>
     </div>
