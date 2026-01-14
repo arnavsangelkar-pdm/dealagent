@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { generateResponse } from '@/lib/respond';
+import { findAnswer } from '@/lib/qa';
 import type { FilterOptions } from '@/lib/retrieval';
 
 export async function POST(req: NextRequest) {
@@ -16,6 +17,23 @@ export async function POST(req: NextRequest) {
     // Simulate a small delay for realism (optional)
     await new Promise(resolve => setTimeout(resolve, 300));
     
+    // First, check if this is a general Q&A question (not deal-specific)
+    const qaAnswer = await findAnswer(message);
+    
+    if (qaAnswer) {
+      // Return Q&A response
+      return NextResponse.json({
+        reply: qaAnswer.answer,
+        sources: qaAnswer.citations.map(citation => ({ id: citation, clientName: citation })),
+        suggestions: [
+          'Show me all deals',
+          'What is the largest deal?',
+          'Show renewal risk analysis'
+        ]
+      });
+    }
+    
+    // If not a Q&A match, use deal retrieval system
     const filterOptions: FilterOptions | undefined = filters ? {
       industry: filters.industry,
       region: filters.region,
