@@ -34,5 +34,11 @@
     "question": "Show me a timeline of the BetaCo activities.",
     "answer": "Pilot kick-off **Oct 7** (see Pilot Timeline.csv). Workshops on **Oct 8–9**; access provisioned **Oct 10**; data load **Oct 12**; stakeholder review **Oct 15**. Activity Log.txt confirms deliverables and owners.",
     "citations": ["betaco_timeline", "betaco_activities"]
+  },
+  {
+    "id": "q7",
+    "question": "What is the PTO policy?",
+    "answer": "Our **Paid Time Off (PTO) policy** includes:\n\n- **Accrual**: Full-time employees accrue **20 days (4 weeks)** of PTO per year, prorated for part-time employees\n- **Carryover**: Up to **5 days** can be carried over to the next year (must be used by March 31)\n- **New Hires**: Accrual begins immediately; **10 days** available after 90 days of employment\n- **Holidays**: **10 company holidays** in addition to PTO (New Year's Day, Memorial Day, Independence Day, Labor Day, Thanksgiving, Christmas, etc.)\n- **Sick Leave**: Included in PTO balance; no separate sick leave bank\n- **Request Process**: Submit requests through HR portal at least **2 weeks in advance** for planned time off; same-day requests require manager approval\n- **Unlimited PTO**: Available for **Director level and above** (subject to manager approval and business needs)\n\nSee Employee Handbook.pdf for complete details and blackout dates.",
+    "citations": ["employee_handbook", "pto_policy"]
   }
 ]
